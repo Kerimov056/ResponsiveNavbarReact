@@ -5,11 +5,16 @@
     .nav-mobile-link{
         display: block;
         list-style: none;
-        width: 80%;
-        background-color: red;
+        width: 50%;
+        background-color: white;
+        color: black;
+        left: 0;
         position: absolute;
+        z-index: 100;
     }
     ul li{
+        list-style: none;
+        font-weight: 500;
         text-align: center;
         padding: 12px;
         transition: all 0.5 ease-in-out;
@@ -42,7 +47,44 @@
     .twonavbar_search, .search{
         display: none;
     }
-    .search-mobile{
-        
+    .search-mobile {
+        display: inline-block;
+    }
+    .search-mobile input{
+        width: 500px;
+        height: 44px;
+        border: 1px solid white;
+        background-color: red;
+    }
+    input[type="text"]::placeholder {
+        color: white;
+    }
+    .search-icon{
+        display: inline-block;
+        margin-left: -30px;
+        width: 80px;
+        height: 44px;
+        border: 1px solid white;
+        border-left: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    .search-icon svg{
+        width: 30px;
+        height: 30px;
+        color: white;
+        margin-right: 16px;
+    }
+    .rose{
+        display: none;
+    }
+    .twonavbar{
+        align-items: center;
+        height: 70px;
+    }
+    .twonavbar_in{
+        height: 70%;
     }
 }

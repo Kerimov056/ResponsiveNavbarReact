@@ -125,4 +125,7 @@ span{
 
 /* ....................................... */
 
+.search-mobile, .search-icon {
+    display: none;
+}
 

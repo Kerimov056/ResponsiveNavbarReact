@@ -39,7 +39,7 @@ const Firstnavbar = () => {
           </div>
         </div>
       </div>
-      {/* twonavbar_search' */}
+     
       <div className='twonavbar'>
         <div className='twonavbar_in'>
           <div>
@@ -50,12 +50,12 @@ const Firstnavbar = () => {
           <div className='twonavbar_img'>
             <img src='https://almali.store/wp-content/uploads/2021/06/newlogo.png'></img>
           </div>
-          <div className="twonavbar_search" onClick={()=>{setMobile(false)}}>
+          <div className="twonavbar_search">
             <input placeholder='   Men axtariram...' type='text'></input>
           </div>
           <span className='search'><BsSearch /></span>
           <div>
-            <span className='shop'><BsFlower1 /></span>
+            <span className='shop rose'><BsFlower1 /></span>
             <span className='shop'><BsShop /></span>
           </div>
         </div>
@@ -73,9 +73,12 @@ const Firstnavbar = () => {
             <Link to='/mesiet'><li>MƏİŞƏT AVADANLIQLARI <HiChevronDown /></li></Link>
             <Link to='/diger'><li>DİGƏR <HiChevronDown /></li></Link>
           </ul>
-        </div>
-       
+        <div className="search-mobile">
+            <input placeholder='   Men axtariram...' type='text'></input>
+          </div>
+          <span className='search-icon'><BsSearch /></span>
       </div>
+        </div>
     </>
   )
 }
