@@ -12,6 +12,7 @@ import { BsSearch } from "react-icons/bs"
 import { BsFlower1 } from "react-icons/bs"
 import { BsShop } from "react-icons/bs"
 import { HiChevronDown } from "react-icons/hi"
+import { HiOutlineShoppingBag } from "react-icons/hi"
 import { FaBars } from "react-icons/fa"
 import { ImCross } from "react-icons/im"
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
@@ -39,10 +40,13 @@ const Firstnavbar = () => {
           </div>
         </div>
       </div>
-     
+
       <div className='twonavbar'>
         <div className='twonavbar_in'>
           <div>
+            <span className='sho'><HiOutlineShoppingBag/></span>
+          </div>
+          <div className='Hamburger'>
             <button className='mobile' onClick={() => setMobile(!mobile)}>
               {mobile ? <ImCross /> : <FaBars />}
             </button>
@@ -55,7 +59,7 @@ const Firstnavbar = () => {
           </div>
           <span className='search'><BsSearch /></span>
           <div>
-            <span className='shop rose'><BsFlower1 /></span>
+            <span className='shop'><BsFlower1 /></span>
             <span className='shop'><BsShop /></span>
           </div>
         </div>
@@ -73,12 +77,12 @@ const Firstnavbar = () => {
             <Link to='/mesiet'><li>MƏİŞƏT AVADANLIQLARI <HiChevronDown /></li></Link>
             <Link to='/diger'><li>DİGƏR <HiChevronDown /></li></Link>
           </ul>
-        <div className="search-mobile">
+          <div className="search-mobile">
             <input placeholder='   Men axtariram...' type='text'></input>
           </div>
           <span className='search-icon'><BsSearch /></span>
-      </div>
         </div>
+      </div>
     </>
   )
 }

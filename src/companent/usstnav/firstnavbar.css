@@ -46,7 +46,7 @@ span{
 }
 
 .twonavbar_in{
-    width: 76%;
+    width: 78%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -129,3 +129,6 @@ span{
     display: none;
 }
 
+.sho{
+    display: none;
+}
