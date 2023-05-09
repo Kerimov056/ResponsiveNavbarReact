@@ -1,3 +1,42 @@
 @media (max-width:768px) {
-    
+    .nav-link{
+        display: none;
+    }
+    .nav-mobile-link{
+        display: block;
+        list-style: none;
+        width: 80%;
+        background-color: red;
+        position: absolute;
+    }
+    ul li{
+        text-align: center;
+        padding: 12px;
+        transition: all 0.5 ease-in-out;
+        width: 100%;
+    }
+    .mobile{
+        position: absolute;
+        display: block;
+        right: 20px;
+    }
+    .left{
+        display: none;
+    }
+    .n{
+        display: none;
+    }
+    .firstnavbar_in{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(240, 240, 240, 1);
+    }
+    .sosial{
+        display: inline-block;
+        color: rgb(80, 80, 80);
+    }
+    .twonavbar_img img{
+        width: 130px;
+        height: 40px;
+    }
 }

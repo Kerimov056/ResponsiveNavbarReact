@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './firstnavbar.css'
+import './responsive.css'
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaMedal } from "react-icons/fa"
 import { BsFillGiftFill } from "react-icons/bs"
@@ -16,7 +17,7 @@ import { ImCross } from "react-icons/im"
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 const Firstnavbar = () => {
-  const [mobile,setMobile] = useState(false)
+  const [mobile, setMobile] = useState(false)
 
   return (
     <>
@@ -27,24 +28,29 @@ const Firstnavbar = () => {
             <span>(055) 561 35 35</span>
             <span>info@almali.az</span>
           </div>
-          <div>
-            <span><FaMapMarkerAlt /> xerite</span>
-            <span><FaMedal /> bonus</span>
-            <span><BsFillGiftFill /> hediyye</span>
-            <span><BsPersonFill /> şexsi kabinet</span>
+          <div className='right'>
+            <span className='n'><FaMapMarkerAlt /> xerite</span>
+            <span className='n'><FaMedal /> bonus</span>
+            <span className='n'><BsFillGiftFill /> hediyye</span>
+            <span className='n'><BsPersonFill /> şexsi kabinet</span>
             <span className='sosial'><BsFacebook /> </span>
             <span className='sosial'><BsInstagram /> </span>
             <span className='sosial'><BsWhatsapp /> </span>
           </div>
         </div>
       </div>
-
+      {/* twonavbar_search' */}
       <div className='twonavbar'>
         <div className='twonavbar_in'>
+          <div>
+            <button className='mobile' onClick={() => setMobile(!mobile)}>
+              {mobile ? <ImCross /> : <FaBars />}
+            </button>
+          </div>
           <div className='twonavbar_img'>
             <img src='https://almali.store/wp-content/uploads/2021/06/newlogo.png'></img>
           </div>
-          <div className='twonavbar_search'>
+          <div className={mobile? 'twonavbar_search' : 'search-mobile'}>
             <input placeholder='   Men axtariram...' type='text'></input>
           </div>
           <span className='search'><BsSearch /></span>
@@ -57,19 +63,16 @@ const Firstnavbar = () => {
 
       <div className='threenavbar'>
         <div className='threenavbar_in'>
-          <ul className='nav-link'>
-            <Link to='/telefon'><li>TELEFONLAR VƏ PLANŞETLƏR <HiChevronDown/></li></Link>
-            <Link to='/smart'><li>SMART SAATLAR <HiChevronDown/></li></Link>
-            <Link to='/tv'><li>TV VƏ AUDIO <HiChevronDown/></li></Link>
-            <Link to='/foto'><li>FOTO VƏ VIDEO <HiChevronDown/></li></Link>
-            <Link to='/noutbuk'><li>NOUTBUKLAR  VƏ PC <HiChevronDown/></li></Link>
-            <Link to='/oyun'><li>OYUN KONSOLLARI <HiChevronDown/></li></Link>
-            <Link to='/mesiet'><li>MƏİŞƏT AVADANLIQLARI <HiChevronDown/></li></Link>
-            <Link to='/diger'><li>DİGƏR <HiChevronDown/></li></Link>
+          <ul className={mobile ? 'nav-mobile-link' : 'nav-link'} onClick={() => { setMobile(false) }}>
+            <Link to='/telefon'><li>TELEFONLAR VƏ PLANŞETLƏR <HiChevronDown /></li></Link>
+            <Link to='/smart'><li>SMART SAATLAR <HiChevronDown /></li></Link>
+            <Link to='/tv'><li>TV VƏ AUDIO <HiChevronDown /></li></Link>
+            <Link to='/foto'><li>FOTO VƏ VIDEO <HiChevronDown /></li></Link>
+            <Link to='/noutbuk'><li>NOUTBUKLAR  VƏ PC <HiChevronDown /></li></Link>
+            <Link to='/oyun'><li>OYUN KONSOLLARI <HiChevronDown /></li></Link>
+            <Link to='/mesiet'><li>MƏİŞƏT AVADANLIQLARI <HiChevronDown /></li></Link>
+            <Link to='/diger'><li>DİGƏR <HiChevronDown /></li></Link>
           </ul>
-          <button className='mobile'>
-            {mobile ? <ImCross />: <FaBars/>}
-          </button>
         </div>
       </div>
     </>
