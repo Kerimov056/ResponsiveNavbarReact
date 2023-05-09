@@ -39,4 +39,10 @@
         width: 130px;
         height: 40px;
     }
+    .twonavbar_search, .search{
+        display: none;
+    }
+    .search-mobile{
+        
+    }
 }

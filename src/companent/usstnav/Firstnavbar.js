@@ -50,7 +50,7 @@ const Firstnavbar = () => {
           <div className='twonavbar_img'>
             <img src='https://almali.store/wp-content/uploads/2021/06/newlogo.png'></img>
           </div>
-          <div className={mobile? 'twonavbar_search' : 'search-mobile'}>
+          <div className="twonavbar_search" onClick={()=>{setMobile(false)}}>
             <input placeholder='   Men axtariram...' type='text'></input>
           </div>
           <span className='search'><BsSearch /></span>
@@ -74,6 +74,7 @@ const Firstnavbar = () => {
             <Link to='/diger'><li>DİGƏR <HiChevronDown /></li></Link>
           </ul>
         </div>
+       
       </div>
     </>
   )
