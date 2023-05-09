@@ -10,6 +10,7 @@ import { BsInstagram } from "react-icons/bs"
 import { BsWhatsapp } from "react-icons/bs"
 import { BsSearch } from "react-icons/bs"
 import { BsFlower1 } from "react-icons/bs"
+import { BsChevronRight } from "react-icons/bs"
 import { BsShop } from "react-icons/bs"
 import { HiChevronDown } from "react-icons/hi"
 import { HiOutlineShoppingBag } from "react-icons/hi"
@@ -44,7 +45,7 @@ const Firstnavbar = () => {
       <div className='twonavbar'>
         <div className='twonavbar_in'>
           <div>
-            <span className='sho'><HiOutlineShoppingBag/></span>
+            <span className='sho'><HiOutlineShoppingBag /></span>
           </div>
           <div className='Hamburger'>
             <button className='mobile' onClick={() => setMobile(!mobile)}>
@@ -68,14 +69,14 @@ const Firstnavbar = () => {
       <div className='threenavbar'>
         <div className='threenavbar_in'>
           <ul className={mobile ? 'nav-mobile-link' : 'nav-link'} onClick={() => { setMobile(false) }}>
-            <Link to='/telefon'><li>TELEFONLAR VƏ PLANŞETLƏR <HiChevronDown /></li></Link>
-            <Link to='/smart'><li>SMART SAATLAR <HiChevronDown /></li></Link>
-            <Link to='/tv'><li>TV VƏ AUDIO <HiChevronDown /></li></Link>
-            <Link to='/foto'><li>FOTO VƏ VIDEO <HiChevronDown /></li></Link>
-            <Link to='/noutbuk'><li>NOUTBUKLAR  VƏ PC <HiChevronDown /></li></Link>
-            <Link to='/oyun'><li>OYUN KONSOLLARI <HiChevronDown /></li></Link>
-            <Link to='/mesiet'><li>MƏİŞƏT AVADANLIQLARI <HiChevronDown /></li></Link>
-            <Link to='/diger'><li>DİGƏR <HiChevronDown /></li></Link>
+            <Link to='/telefon'><li>TELEFONLAR VƏ PLANŞETLƏR <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
+            <Link to='/smart'><li>SMART SAATLAR <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
+            <Link to='/tv'><li>TV VƏ AUDIO <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
+            <Link to='/foto'><li>FOTO VƏ VIDEO <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
+            <Link to='/noutbuk'><li>NOUTBUKLAR  VƏ PC <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
+            <Link to='/oyun'><li>OYUN KONSOLLARI <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
+            <Link to='/mesiet'><li>MƏİŞƏT AVADANLIQLARI <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
+            <Link to='/diger'><li>DİGƏR <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
           </ul>
           <div className="search-mobile">
             <input placeholder='   Men axtariram...' type='text'></input>

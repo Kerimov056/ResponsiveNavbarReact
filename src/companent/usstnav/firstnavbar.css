@@ -124,11 +124,16 @@ span{
 }
 
 /* ....................................... */
+/* responsiveden sonra olan deyisiklikler elaveler */
 
 .search-mobile, .search-icon {
     display: none;
 }
 
 .sho{
+    display: none;
+}
+
+.bs-chevron-right{
     display: none;
 }
