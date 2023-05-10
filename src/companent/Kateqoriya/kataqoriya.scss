@@ -1,0 +1,81 @@
+.telefonAll {
+    margin-top: 14px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.telefonAll_in {
+    width: 81%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+        .phone{
+            width: 280px;
+            height: 370px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .phone_in{
+                width: 94%;
+                height: 100%;
+                text-align: center; 
+
+                .img{
+                    margin-left: 5px;
+                   width: 100%;
+                   height: 84%;
+
+                    & > img{
+                        object-fit: cover;
+                        width: 250px;
+                        height: 300px;
+                        margin-left: -8px;
+                    }
+
+                    #btn{
+                        padding: 3px 6px;
+                        color: white;
+                        background-color: red;
+                        border: none;
+                        font-size: 15px;
+                        font-weight: 600;
+                        position: relative;
+                        transform: translate(-98%,-980%);
+                    }
+                }
+
+                .info{
+                    font-size: 1px;
+                    & > h4{
+
+                        & >span{
+                            font-size: 14px;
+                            margin-left: 11px;  
+                            font-weight: 900;
+                            margin-left: 5px;
+                        }
+
+                    }
+
+                    & > h5{
+                        margin-top: 10px;
+
+                        .old{
+                            text-decoration: line-through;
+                            color: rgb(88, 89, 89);
+                        }
+                       
+                        .new{
+                            color: red;
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+               
+        }

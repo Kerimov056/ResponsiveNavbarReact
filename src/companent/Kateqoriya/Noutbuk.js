@@ -1,5 +1,5 @@
 import React from 'react'
-import './kataqoriya.css'
+import './kataqoriya.scss'
 
 const Noutbuk = () => {
   return (

@@ -4,6 +4,8 @@
     }
 
     .nav-mobile-link {
+        /* width: 300px; */
+        text-align: left;
         margin-top: 120px;
         display: block;
         list-style: none;
@@ -16,6 +18,7 @@
     }
 
     .nav-mobile-link li {
+        margin-left: 0;
         list-style: none;
         outline: none;
         font-weight: 500;
