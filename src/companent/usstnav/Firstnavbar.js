@@ -69,7 +69,7 @@ const Firstnavbar = () => {
       <div className='threenavbar'>
         <div className='threenavbar_in'>
           <ul className={mobile ? 'nav-mobile-link' : 'nav-link'} onClick={() => { setMobile(false) }}>
-            <Link to='/telefon'><li>TELEFONLAR VƏ PLANŞETLƏR <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
+            <Link to='/telefon'><li>Home<HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
             <Link to='/smart'><li>SMART SAATLAR <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
             <Link to='/tv'><li>TV VƏ AUDIO <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
             <Link to='/foto'><li>FOTO VƏ VIDEO <HiChevronDown className="hi-chevron-down"/> <BsChevronRight className="bs-chevron-right"/></li></Link>
