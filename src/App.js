@@ -1,6 +1,6 @@
 import Firstnavbar from "./companent/usstnav/Firstnavbar";
 import Telefonlist from "./companent/Kateqoriya/Home/Telefonlist"
-import Smart from "./companent/Kateqoriya/Smart"
+import Smart from "./companent/Kateqoriya/SmartSaatlar/Smart"
 import Tv from "./companent/Kateqoriya/Tv"
 import Foto from "./companent/Kateqoriya/Foto"
 import Noutbuk from "./companent/Kateqoriya/Noutbuk"
