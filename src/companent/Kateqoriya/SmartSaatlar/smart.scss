@@ -1,16 +1,82 @@
 .watch{
     margin-top: 100px;
-    width: 260px;
-    height: 400px;
-    background-color: red;
-
+    width: 235px;
+    height: 420px;
+    cursor: pointer;
+    
     .watch_img{
         width: 100%;
-        height: 50%;
+        height: 60%;
 
         &>img{
             width: 100%;
+            height: 90%;
+            object-fit: cover;
+        }
+    }
+
+    .watch_info{
+        margin-top: -16px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        .watch_info_in{
+            text-align: center;
+            width: 92%;
             height: 100%;
+
+            .h55{
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .spann{
+                margin-top: 10px;
+                font-size: 18px;
+                color: red;
+                font-weight: 400;
+
+                &>span{
+                    color: red;
+                    font-size: 18px;
+                }
+            }
+
+            button{
+                margin-top: -30px;
+                padding: 9px 18px;
+                font-size: 14px;
+                background-color: red;
+                border: none;
+                outline: none;
+                font-weight: 500;
+                
+                &:hover{
+                    background-color: greenyellow;
+                }
+                &:hover .sebet{
+                    display: none;
+                }
+                &:hover .sebetIcon{
+                    display: block;
+                }
+                .sebet{
+                    margin-left: -1px;    
+                    color: white;
+
+                }
+
+                .sebetIcon{
+                    display: none;
+                }
+                .sebetIcon svg{
+                    color: white;
+                    width: 54px;
+                    height: 16px;
+                }
+            }
         }
     }
 }
