@@ -80,3 +80,18 @@
         }
     }
 }
+
+
+.watchAll{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .watchAll_in{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

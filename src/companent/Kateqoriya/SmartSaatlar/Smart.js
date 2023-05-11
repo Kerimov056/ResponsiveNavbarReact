@@ -1,19 +1,20 @@
 import React from 'react'
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import './smart.scss'
+import PropTypes from  'prop-types'
 
 
-const Smart = () => {
+const Smart = ({imgUrl,description,price}) => {
   return (
     <>
       <div className='watch'>
         <div className='watch_img'>
-          <img src='https://almali.store/wp-content/uploads/2022/08/71XMTLtZd5L._AC_SL1500_-768x768.jpg'></img>
+          <img src={imgUrl}></img>
         </div>
         <div className='watch_info'>
           <div className='watch_info_in'>
-            <h5 className='h55'>(Sifarişlə) New Apple Watch Series 8 GPS 41mm Midnight Aluminum Case with Midnight Sport Band -- Regular</h5>
-            <h6 className='spann'>859.0<span>AZN</span></h6> <br/>
+            <h5 className='h55'>{description}</h5>
+            <h6 className='spann'>{price}<span>AZN</span></h6> <br/>
             <button type='button'><span className='sebet'>Sebete at</span><span className='sebetIcon'><AiOutlineShoppingCart/></span></button>
           </div>
         </div>
@@ -22,4 +23,14 @@ const Smart = () => {
   )
 }
 
+Smart.propTypes={
+  imgurl: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired
+}
+
+Smart.defaultProps={
+  // price: "bele melumat yoxdur",
+  // description: "bele melumat yoxdur"
+}
 export default Smart

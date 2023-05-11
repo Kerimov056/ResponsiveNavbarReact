@@ -1,6 +1,6 @@
 import Firstnavbar from "./companent/usstnav/Firstnavbar";
 import Telefonlist from "./companent/Kateqoriya/Home/Telefonlist"
-import Smart from "./companent/Kateqoriya/SmartSaatlar/Smart"
+import SmartSaatlar from "./companent/Kateqoriya/SmartSaatlar/SmartSaatlar"
 import Tv from "./companent/Kateqoriya/Tv"
 import Foto from "./companent/Kateqoriya/Foto"
 import Noutbuk from "./companent/Kateqoriya/Noutbuk"
@@ -20,8 +20,8 @@ function App() {
           <Route path='/telefon' Kateqoriya={Telefonlist} exact>
             <Telefonlist/>
           </Route>
-          <Route path='/smart' Kateqoriya={Smart} exact>
-            <Smart/>
+          <Route path='/smart' Kateqoriya={SmartSaatlar} exact>
+            <SmartSaatlar/>
           </Route>
           <Route path='/tv' Kateqoriya={Tv} exact>
             <Tv/>
@@ -43,6 +43,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+
       <Footer/>
     </>
   );
