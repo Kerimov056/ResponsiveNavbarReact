@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Telefon from './Telefon'
 import axios from 'axios';
-import './kataqoriya.scss'
+import './Home.scss'
 
 const Telefonlist = () => {
     const [telefon, setTelefon] = useState([])

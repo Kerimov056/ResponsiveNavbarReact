@@ -1,0 +1,54 @@
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+    .footer_in{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & > p{
+            margin-left: -80px;
+        }
+        span, p{
+            color: white;
+        }
+
+        .contact{
+            margin-bottom: -27px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 400px;
+            height: 40px;
+            background-color: red;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 28px;
+
+            .message svg{
+                margin-bottom: -10px;
+                margin-right: 20px;
+                width: 26px;
+                height: 26px;
+            }
+
+            &:last-child{
+                margin-left: 40px;
+            }
+
+        }
+
+        .sosial svg{
+            width: 26px;
+            height: 26px;
+        }
+
+
+    }
+}

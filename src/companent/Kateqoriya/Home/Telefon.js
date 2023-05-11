@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from  'prop-types'
-import './kataqoriya.scss'
+import './Home.scss'
 
 const Telefon = ({imgurl, iphoneName,kapasite,iphoneColor,oldPrice,newPrice}) => {
   return (
@@ -8,7 +8,7 @@ const Telefon = ({imgurl, iphoneName,kapasite,iphoneColor,oldPrice,newPrice}) =>
         <div className='phone'>
           <div className='phone_in'>
             <div className='img'>
-              <img src={imgurl}></img>
+              <img src={imgurl} alt={imgurl}></img>
               <button id='btn' type='button'>ENDIRIMLER</button>
             </div>
             <div className='info'>

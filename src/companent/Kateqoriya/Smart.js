@@ -1,5 +1,5 @@
 import React from 'react'
-import './kataqoriya.scss'
+// import './kataqoriya.scss'
 
 const Smart = () => {
   return (

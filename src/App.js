@@ -1,5 +1,5 @@
 import Firstnavbar from "./companent/usstnav/Firstnavbar";
-import Telefonlist from "./companent/Kateqoriya/Telefonlist"
+import Telefonlist from "./companent/Kateqoriya/Home/Telefonlist"
 import Smart from "./companent/Kateqoriya/Smart"
 import Tv from "./companent/Kateqoriya/Tv"
 import Foto from "./companent/Kateqoriya/Foto"
@@ -8,6 +8,7 @@ import Oyun from "./companent/Kateqoriya/Oyun"
 import Mesiet from "./companent/Kateqoriya/Mesiet"
 import Diger from "./companent/Kateqoriya/Diger"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./companent/footer/Footer";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer/>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import './kataqoriya.scss'
+// import './kataqoriya.scss'
 
 const Diger = () => {
   return (
@@ -10,3 +10,4 @@ const Diger = () => {
 }
 
 export default Diger
+
