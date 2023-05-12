@@ -28,8 +28,5 @@ Tv.propTypes={
   price: PropTypes.number.isRequired
 }
 
-TV.defaultProps={
-  // price: "bele melumat yoxdur",
-  // description: "bele melumat yoxdur"
-}
+
 export default Tv
