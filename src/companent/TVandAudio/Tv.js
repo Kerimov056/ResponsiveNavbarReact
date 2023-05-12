@@ -3,7 +3,7 @@ import './tv.scss'
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import PropTypes from  'prop-types'
 
-const Tv = () => {
+const Tv = ({imgUrl,description,price}) => {
   return (
     <>
       <div className='Tv'>
@@ -22,4 +22,14 @@ const Tv = () => {
   )
 }
 
+Tv.propTypes={
+  imgurl: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired
+}
+
+TV.defaultProps={
+  // price: "bele melumat yoxdur",
+  // description: "bele melumat yoxdur"
+}
 export default Tv
