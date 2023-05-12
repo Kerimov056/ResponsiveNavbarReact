@@ -1,5 +1,5 @@
 import React from 'react'
-// import './kataqoriya.scss'
+
 
 const Tv = () => {
   return (
