@@ -11,11 +11,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./companent/footer/Footer";
 
 function App() {
+
+ 
   return (
     <>
       <Router>
         <Firstnavbar />
-
+         
         <Switch>
           <Route path='/telefon' Kateqoriya={Telefonlist} exact>
             <Telefonlist/>

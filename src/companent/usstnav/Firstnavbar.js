@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './firstnavbar.css'
-import './responsive.css'
+// import './responsive.css'
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaMedal } from "react-icons/fa"
 import { BsFillGiftFill } from "react-icons/bs"

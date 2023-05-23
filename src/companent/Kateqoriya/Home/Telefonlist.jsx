@@ -9,21 +9,33 @@ const Telefonlist = () => {
         axios.get('https://fakestoreapi.com/products')
             .then(response => {
                 setTelefon(response.data)
+                console.log(response.data);
             })
             .catch(error => {
                 console.log(error);
             });
     }, []);
+
+    const [price, setPrice] = useState(1)
+
+    const change = (e) => {
+        setPrice(e.target.value);
+    }
+
     return (
         <>
+            {/* <div>
+                <input type="range" min={1} max={1000} onInput={change} />
+                <h1>Price: {price}</h1>
+            </div> */}
+
+
             <div className='telefonAll'>
-                <div className='telefonAll_in'>
-                    {
-                        telefon.map((item, id) => {
-                            return <Telefon key={id} imgurl={item.image} iphoneName={item.title} kapasite="128GB" iphoneColor="(Blue)" oldPrice={2499.0} newPrice={item.price} />
-                        })
-                    }
-                </div>
+                {
+                    telefon.filter(sya => { return sya.price > parseInt(price, 0) }).map(sum => {
+                        return <Telefon key={sum.id} imgurl={sum.image} iphoneName={sum.title} kapasite="128GB" iphoneColor="(Blue)" oldPrice={2499.0} newPrice={sum.price} />
+                    })
+                }
             </div>
         </>
     )
